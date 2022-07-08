@@ -1,0 +1,17 @@
+/* Add application styles & imports to this file! */
+.input-text {
+  color: var(#212529);
+  text-align: center !important;
+  font-size: 1.25rem !important;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: rgba(33, 37, 41, 0.075);
+  padding-right: 4rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}

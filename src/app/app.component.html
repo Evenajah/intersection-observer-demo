@@ -1,0 +1,14 @@
+<input type="text" #inputEl class="input-text" (input)="inputKeyword(inputEl.value)" />
+<div>
+  <div *ngFor="let result of results">
+    <h1>
+      {{ result.name }}
+    </h1>
+    <ng-container *ngIf="firmsAsName[result.name] as firms">
+      <div (appIntersection)="intersect$.next()" *ngFor="let firm of firms">
+        <h3>{{ firm.title }}</h3>
+        <div>{{ firm.opening_crawl }}</div>
+      </div>
+    </ng-container>
+  </div>
+</div>
